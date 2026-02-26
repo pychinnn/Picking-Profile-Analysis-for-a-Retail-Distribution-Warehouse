@@ -18,25 +18,34 @@ The client recently took over operations of a Retail Distribution Warehouse. Due
 * **Observation**: The order **fulfilment rate** peaked at only **24%** in July 2023 (despite the total transactions drop to 8,833 lines).
 * **Bottleneck**: The warehouse is physically constrained to a maximum of **~75 successful transactions per day**.
 * **Insight**: The 79% non-fulfilment rate falls drastically below retail logistics benchmarks.
+<img width="1357" height="549" alt="image" src="https://github.com/user-attachments/assets/856f46f2-ae51-4fa2-b0f7-42c76cd2bf71" />
 
 ### 2. Labour Allocation
 * **Observation**: July data reveals **Monday** and **Saturday** as peak demand days. Conversely, Sunday is the lowest demand day.
 * **Bottleneck**: Maintaining full operations on Sundays consumes overhead and labour without generating significant output.
 * **Insight**: Labour scheduling is misaligned with actual throughput demands.
+<img width="1182" height="549" alt="image" src="https://github.com/user-attachments/assets/cc03df78-9424-4328-8899-53e3cd3026bc" />
+
 
 ### 3. Category-Specific Performance Failure
 * **Observation**: Fulfilment varies drastically by zone. "CHILLED & FROZEN" leads with an 83% success rate. However, "GOURMET USE" and "GROCERY" average a 21.5% success rate, and "PHARMACEUTICALS" shows a critical faiure at 6%.
 * **Bottleneck**: "GOURMET USE" (8,898 lines) and "GROCERY" (8,135 lines) are failing due to sheer volume overwhelming current resources. "PHARMACEUTICALS" is failing due to process constraints (likely picking protocols).
 * **Insight**: The warehouse can successfully manage specialized zone (CHILLED & FROZEN), but lasks a high-density picking strategy for bulk categories.
+<img width="1182" height="563" alt="image" src="https://github.com/user-attachments/assets/2ffbe365-9f59-4b22-9046-9a31ef16ecaa" />
+
 
 ### 4. Picking Process Simulation: "Pick by Order" vs "Pick by Product"
 * **Result**: The current "Pick by Order" method forcess pickers into redundant travel paths for high-velocity items.
 * **Bottleneck**: The labour and MHE efficiency gained from batch picking outweighs the minimal extra time needed for dock-sorting.
+<img width="790" height="589" alt="image" src="https://github.com/user-attachments/assets/b87c3dbf-73d4-400e-ab85-1ac3fa8ae576" />
+
 
 ### 5. Inventory Segmentation (ABC-XYZ Analysis)
 * **Observation**: A lean "A-Class" core of just 42 items (23%) drives the majority of revenue, with 38 of these are being highly predictable (AX and AY). Meanwhile, the warehouse holds 44 "CZ" items (low volume and highly unpredictable).
 *  **Bottleneck**: Pickers spend excessive time navigating around "slow-movers" (CZ) to access revenue-driving items.
 *  **Insight**: The fulfilment gap is operational. Slow movers are creating operational noise and clutter.
+<img width="680" height="572" alt="image" src="https://github.com/user-attachments/assets/f332048d-6a4e-4cbd-a051-0d0e3c74a38c" />
+
 
 ## Recommendations
 Based on the data analysis, I proposed the following phased turnaround strategy to the client:
