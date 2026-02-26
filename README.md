@@ -35,4 +35,21 @@ The client recently took over operations of a Retail Distribution Warehouse. Due
 
 ### 5. Inventory Segmentation (ABC-XYZ Analysis)
 * **Observation**: A lean "A-Class" core of just 42 items (23%) drives the majority of revenue, with 38 of these are being highly predictable (AX and AY). Meanwhile, the warehouse holds 44 "CZ" items (low volume and highly unpredictable).
-*  **Bottleneck**: Pickers spend excessive time navigating around "slow
+*  **Bottleneck**: Pickers spend excessive time navigating around "slow-movers" (CZ) to access revenue-driving items.
+*  **Insight**: The fulfilment gap is operational. Slow movers are creating operational noise and clutter.
+
+## Recommendations
+Based on the data analysis, I proposed the following phased turnaround strategy to the client:
+### Phase 1: Quick Wins
+1. **Labour realignment**: Suspend Sunday outbound operations and reallocate the resources to high-volume peaks (Monday or Saturday). Or utilize Sunday for strategic pre-picking and replenishment.
+2.  **High density picking model**: Transition from "Pick by Order" to "Pick by Product" for high-velocity categories.
+3.  **Protocol standardization and training**: Deploy specialized training for the new Picking by Product workflow to ensure process compliance.
+
+## Phase 2: Efficiency Audit
+1. **Time and motion study**: Conduct a formal study on the picking process to identify residual bottlenecks in picking or travel paths.
+2. **Root cause deep dive**: Verify if the fulfilment gap has been closed and identify any remaining "hidden" constraints.
+
+## Phase 3: Structural Optimization
+1. **Dynamic slotting strategy**: Relocate 38 hihg-velocity and predictable SKUs (AX/AY) to the "Nearest to Dispatch" zone to minimize travel distance for the majority of daily revenue. Execute ABC-XYZ Analysis and SKUs relocation quarterly. 
+
+*Note: The data in this repository has been anonymized to protect client confidentiality.*
