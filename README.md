@@ -1,7 +1,7 @@
 # Retail Distribution Warehouse: Outbound Fulfilment Optimization
 
 ## Executive Summary
-This project analyzes the outbound operations of a recently acquired Retail Distribution Warehouse during a 3-month transitional period. This warehouse is facing a critical **79% non-fulfilment rate**, the objective was to utilize data analytics to identify operational bottlenecks, simulate process improvements, and design a phased turnaround strategy to stabilize throughput and reduce retail out-of-stock (OOS)) scenarios.
+This project analyses the outbound operations of a recently acquired Retail Distribution Warehouse during a 3-month transitional period. This warehouse is facing a critical **79% non-fulfilment rate**, the objective was to utilize data analytics to identify operational bottlenecks, simulate process improvements, and design a phased turnaround strategy to stabilize throughput and reduce retail out-of-stock (OOS)) scenarios.
 
 ## Key Achievements and Methodologies Used
 * **Data Consolidation**: Aggregated raw outbound transaction logs to establish the performance baseline, revealing a critical **79% fulfilment gap**.
