@@ -10,7 +10,7 @@ This project analyses the outbound operations of a recently acquired Retail Dist
 
 ## Business Context
 The client recently took over operations of a Retail Distribution Warehouse. Due to limited internal familiarity with the outbound process control, the warehouse was struggling to meet basic delivery targets.
-* **Problem**: Consistent delivery failures created "inventory gaps" at retail outlets, leading to **lost revenue and inflated cost-to-serve** from redundant logistics atempts.
+* **Problem**: Consistent delivery failures created "inventory gaps" at retail outlets, leading to **lost revenue and inflated cost-to-serve** from redundant logistics attempts.
 * **Goal**: Identify the **root causes** of fulfilment failures and implement **measures** to close the gap.
 
 ## Data-Driven Insight and Bottleneck Identification
