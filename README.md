@@ -15,45 +15,45 @@ The client recently took over operations of a Retail Distribution Warehouse. Due
 
 ## Data-Driven Insight and Bottleneck Identification
 ### 1. Overall throughput and operational constraints
-* **Observation**: The order **fulfilment rate** peaked at only **24%** in July 2023 (despite the total transactions drop to 8,833 lines).
-* **Bottleneck**: The warehouse is physically constrained to a maximum of **~75 successful transactions per day**.
-* **Insight**: The 79% non-fulfilment rate falls drastically **below retail logistics benchmarks**.
+* **Observation**: **July 2023** recorded the **highest Order Fulfill Rate (24%)** within the 3-month period. Although total order volume decreased to 8,833 lines, the data indicates a clear **improvement** in operational efficiency compared to June 2023.
+* **Bottleneck**: The **79% non-fulfillment** rate remains significantly **below industry benchmarks** for retail logistics.
+* **Insight**: These consistent delivery failures created "**inventory gaps**" at retail outlets. This leads to chronic **out of stock (OOS) scenarios**, which directly impact the overall **revenue** and increase the **cost to serve** due to repeated, unsuccessful logistics attempts.
 <img width="1357" height="549" alt="image" src="https://github.com/user-attachments/assets/856f46f2-ae51-4fa2-b0f7-42c76cd2bf71" />
 
 ### 2. Labour Allocation
-* **Observation**: July data reveals **Monday** and **Saturday** as peak demand days. Conversely, Sunday is the lowest demand day.
-* **Bottleneck**: Maintaining full operations on Sundays **consumes overhead and labour** without generating significant output.
-* **Insight**: Labour scheduling is **misaligned** with actual throughput demands.
+* **Observation**: **July** data shows a **shift in demand patterns** compared to the 3-month average. Monday and Saturday have emerged as the **primary high-volume days**, while the overall fulfillment rate has stabilized.
+* **Bottleneck**: **Sunday** remains the **lowest** demand day, yet it continues to consume **operational overhead and labour hours** without generating significant output.
+* **Insight**: Maintaining **full operations** on Sunday is inefficient. The labour schedule should **align with the actual demand peaks** on Monday and Saturday.
 <img width="1182" height="549" alt="image" src="https://github.com/user-attachments/assets/cc03df78-9424-4328-8899-53e3cd3026bc" />
 
 
 ### 3. Category-Specific Performance Failure
-* **Observation**: Fulfilment varies drastically by zone. "CHILLED & FROZEN" leads with an 83% success rate. However, "GOURMET USE" and "GROCERY" average a **21.5% success rate**, and "PHARMACEUTICALS" shows a **critical faiure at 6%**.
-* **Bottleneck**: "GOURMET USE" (8,898 lines) and "GROCERY" (8,135 lines) are failing due to **sheer volume overwhelming current resources**. "PHARMACEUTICALS" is failing due to process constraints (likely picking protocols).
-* **Insight**: The warehouse can successfully manage specialized zone (CHILLED & FROZEN), but **lasks a high-density picking strategy** for bulk categories.
+* **Observation**: Fulfillment performance is vaires drastically by category. "CHILLED & FROZEN" leads with an **83% success rate** (307 of 370 lines), whereas "PHARMACEUTICAL" shows a **critical service failure with only a 6% success rate**. **High-volume categories** such as "GOURMET USE" and "GROCERY" average only **21.5% success rate**, accounting for bulk of unfulfilled demand.
+* **Bottleneck**: The failure in "GOURMET USE" (8,898 lines) and "GROCERY" (8,135 lines) is driven by **sheer volume overwhelming the current resources**. Conversely, the "PHARMACEUTICAL" failure to be a process constraint, likely due to specific picking protocols or security requirements.
+* **Insight**: The success in "CHILLED & FROZEN" proves that the warehouse can handle a specialized zone well. The issue in "GOURMET USE" and "GROCERY" is a **scalability**, while the issue in "PHARMACEUTICAL" is **process**. The high volume is currently being sacrificed due to the lack of a specialized **high-density picking strategy**.
 <img width="1182" height="563" alt="image" src="https://github.com/user-attachments/assets/2ffbe365-9f59-4b22-9046-9a31ef16ecaa" />
 
 
 ### 4. Picking Process Simulation: "Pick by Order" vs "Pick by Product"
-* **Result**: Modeling a "Pick by Product" approach reduced total Handling Frequency by **49%** (dropping from 63,307 to 32,289 touches). 
-* **Bottleneck**: The current "Pick by Order" method forces pickers into **redundant travel paths** for high-velocity items.
-* **Insight**: The labour and MHE efficiency gained from batch picking vastly outweighs the **minimal extra time** needed for dock-sorting.
+* **Observation**: By simulating an "Pick by Product" model, the total Handling Frequency is **reduced by 49%** (droppig from 63,307 to 32,289 touches).
+* **Bottleneck**: The current "Pick by Order" is **highly inefficient for high-velocity items**. It forces pickers to visit the **same location multiple times** for different orders, resulting in **redundant travel**.
+* **Insight**: The efficiency gain from consolidation outweighs the additional time required for sorting at the dock. This trade-off significantly **optimize both labour hours and MHE (Material Handling Equipment) usage**.
 <img width="790" height="589" alt="image" src="https://github.com/user-attachments/assets/b87c3dbf-73d4-400e-ab85-1ac3fa8ae576" />
 
 
 ### 5. Inventory Segmentation (ABC-XYZ Analysis)
-* **Observation**: A lean "A-Class" core of just **42 items (23%) drives the majority of revenue**, with 38 of these are being highly predictable (AX and AY). Meanwhile, the warehouse holds **44 "CZ" items (low volume and highly unpredictable)**.
-*  **Bottleneck**: Pickers spend **excessive time navigating around "slow-movers" (CZ)** to access revenue-driving items.
-*  **Insight**: The fulfilment gap is operational. Slow movers are creating **operational noise and clutter**.
+* **Observation**: The warehouse maintains a very lean "A-Class" core with only 42 items (23%) driving the majority of revenue. Within this group, 38 items ("AX" and "AY") are relatively **stable and predictable**. However, the largest concentration of SKUs is in the "CZ" category (44 items) are **low volume and unpredictable**.
+* **Bottleneck**: Holding more "CZ" items (44) than the entire "A-Class" items (42) means that the picking team is likely **spending as much time navigating around "slow-movers"** as they are managing the products tdrive revenue.
+* **Insight**: The high success rate of "A" and "B" items in the stable "X" and "Y" categories suggests that the fulfillment failure is likely not a forecasting issue. The 44 "CZ" items are likely creating **operational noise**, cluttering the warehouse and slowing down the access to the 42 "A" items.
 <img width="680" height="572" alt="image" src="https://github.com/user-attachments/assets/f332048d-6a4e-4cbd-a051-0d0e3c74a38c" />
 
 
 ## Recommendations
 Based on the data analysis, I proposed the following phased turnaround strategy to the client:
 ### Phase 1: Quick Wins
-1. **Labour realignment**: Suspend Sunday outbound operations and **reallocate the resources to high-volume peaks (Monday or Saturday)**. Or utilize Sunday for **strategic pre-picking and replenishment**.
-2.  **High density picking model**: Transition from "Pick by Order" to "Pick by Product" for **high-velocity categories**.
-3.  **Protocol standardization and training**: Deploy specialized **training for the new Picking by Product workflow** to ensure process compliance.
+1. **Labour realignment**: Suspend active outbound operations on Sundays to eliminate overhead waste and reallocate resources to support weekday peaks. Or utilize Sunday shifts for strategic pre-picking and replenishment.
+2.  **High density picking model**: Shift the "Pick by Order" to "Pick by Product" to resolving the volume-based process failures identified in high-velocity categories like "GOURMET USE" and "GROCERY".
+3.  **Protocol standardization and training**: Provide a protocol training to ensure the staff fully understand the new protocol.
 
 ## Phase 2: Efficiency Audit
 1. **Time and motion study**: Conduct a formal study on the picking process to **identify residual bottlenecks** in picking process or travel paths.
