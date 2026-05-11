@@ -52,8 +52,8 @@ The client recently took over operations of a Retail Distribution Warehouse. Due
 Based on the data analysis, I proposed the following phased turnaround strategy to the client:
 ### Phase 1: Quick Wins
 1. **Labour realignment**: Suspend active outbound operations on Sundays to eliminate overhead waste and reallocate resources to support weekday peaks. Or utilize Sunday shifts for strategic pre-picking and replenishment.
-2.  **High density picking model**: Shift the "Pick by Order" to "Pick by Product" to resolving the volume-based process failures identified in high-velocity categories like "GOURMET USE" and "GROCERY".
-3.  **Protocol standardization and training**: Provide a protocol training to ensure the staff fully understand the new protocol.
+2. **High density picking model**: Shift the "Pick by Order" to "Pick by Product" to resolving the volume-based process failures identified in high-velocity categories like "GOURMET USE" and "GROCERY".
+3. **Protocol standardization and training**: Provide a protocol training to ensure the staff fully understand the new protocol.
 
 ## Phase 2: Efficiency Audit
 1. **Time and motion study**: Conduct a formal study on the picking process to **identify residual bottlenecks** in picking process or travel paths.
