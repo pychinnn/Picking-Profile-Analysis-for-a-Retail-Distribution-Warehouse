@@ -14,7 +14,7 @@ The client recently took over operations of a Retail Distribution Warehouse. Due
 * **Goal**: Identify the **root causes** of fulfilment failures and implement **measures** to close the gap.
 
 ## Data-Driven Insight and Bottleneck Identification
-### 1. Overall throughput and operational constraints
+### 1. Overall Throughput and Operational Constraints
 * **Observation**: **July 2023** recorded the **highest Order Fulfill Rate (24%)** within the 3-month period. Although total order volume decreased to 8,833 lines, the data indicates a clear **improvement** in operational efficiency compared to June 2023.
 * **Bottleneck**: The **79% non-fulfillment** rate remains significantly **below industry benchmarks** for retail logistics.
 * **Insight**: These consistent delivery failures created "**inventory gaps**" at retail outlets. This leads to chronic **out of stock (OOS) scenarios**, which directly impact the overall **revenue** and increase the **cost to serve** due to repeated, unsuccessful logistics attempts.
